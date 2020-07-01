@@ -1,0 +1,72 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-01T11:52:15.938Z",
+        "line": 4,
+        "name": "basic search",
+        "description": "",
+        "id": "google-search;basic-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11419706600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open google search page",
+            "match": {
+              "location": "step_definitions.GoogleSearchStepDefinition.iOpenGoogleSearchPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4779755900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I lookup the word \"Selenium\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Selenium\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step_definitions.GoogleSearchStepDefinition.iLookupTheWord(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2074710400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "search result display the word \"Selenium\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Selenium\"",
+                  "offset": 31
+                }
+              ],
+              "location": "step_definitions.GoogleSearchStepDefinition.searchResultDisplayTheWord(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Google search",
+    "description": "  As user i want test google search function",
+    "id": "google-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/ressources/feature/GoogleSearch.feature",
+    "tags": []
+  }
+]
